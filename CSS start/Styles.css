@@ -1,0 +1,199 @@
+/* Кольори
+body {
+    background-color: cyan;
+}
+
+p {
+    background-color: grey;
+    opacity: 0.5; /*transparency, прозорість, тут це впливає й на текст
+    color: rgb(16, 16, 17);
+    border: inherit;
+    }
+
+a {
+    color: goldenrod;
+    }
+
+h1 {
+    color: #ff9742;
+    background-color: rgba(212,0,255,0.5); /*transparency, прозорість
+    }
+
+div {
+    border: 1px solid rgb(145, 27, 27);
+}
+*/
+
+/* Шрифт*/
+
+h1 {
+    font-family: Inter, "Segoe UI", Futura, sans-serif;
+    /* font-style: italic; */
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center; /*центрується всередині свого елементу, не посередині сторінки*/
+    /* letter-spacing: 10px; */
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Grande", Geneva, Verdana, sans-serif;
+    background-color: #fdf9fd;
+}
+
+.Quotes {
+    /* font-weight: bold;
+    line-height: 2;
+    word-spacing: 20px;
+    font: 100 20px "Grey Qo", cursive; */
+    font: 100 35px/2 "Grey Qo", cursive; /*де /2 - це відстань між рядками*/
+}
+
+h2 {
+    font-weight: 400;
+    text-shadow: cyan -1px 1px, magenta -2px 2px; /*можна додавати дві-три тіні в різних кольорах*/
+    /* text-decoration-line: line-through; 
+    text-decoration-style: wavy;
+    text-decoration-color: cyan; 
+    text-decoration-thickness: 10px;
+    text-decoration: blueviolet wavy underline;*/
+    border-bottom: 1px solid blueviolet;
+    line-height: 1;
+    width: 30%;
+}
+
+hr {
+    color: blueviolet;
+}
+
+/* Тіні у тексті */
+
+h1 {
+    text-shadow: magenta 2px 4px 2px;
+} /* 2px - вправо-вліво (додати -), 4px - вниз-вгору
+останні 2px - ефект розмиття тіні*/
+
+ul {
+    text-transform: none;
+    /* uppercase усі великі літери
+    capitalize робить всі перші літери в слові заголовними
+    lowercase*/
+}
+
+/* Класи та id*/
+
+#Featured_Review {
+    text-decoration: gold underline;
+}
+
+.Genres {
+    text-decoration: none;
+    background-color: pink;
+    color: blueviolet;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.Genres_div {
+    background-color: pink;
+    width: 21%;
+}
+
+#Cast_list {
+    list-style-type: square;
+    /* list-style-type: "*"; кастомні позначення*/
+    /* list-style-type: none; без позначень, для створення панелі навігації*/
+    list-style-position: inside; /* робить позначення частиною переліку*/
+}
+
+* { /*універсальний селектор, обирає всі елементи на сторінці*/
+}
+
+/* Стилі форм */
+
+input[type=number] {
+    background-color: rgb(230, 225, 225);
+}
+
+input[type=text] {
+    background-color: rgb(230, 225, 225);
+}
+
+/* Кастомізація посилань */
+
+a {
+    font-style: oblique;
+    text-decoration-line: none;
+    color: rgb(177, 26, 177);
+}
+
+a:visited { /*тільки для тих посилань, які були натиснуті*/
+    color: rgb(109, 33, 146);
+}
+
+a:hover {
+    color: rgb(24, 177, 177);
+    text-decoration: underline;
+    cursor: help; /*форма курсору*/
+}
+
+/* Селектори */
+
+a[href*="wiki"] { /*для всіх посилань, які мають будь-де в своїй адресі "wiki"*/
+    
+}
+
+a[href^="#"] { /* для всіх посилань, які починаються з #, тут - для внутрішніх посилань*/
+
+}
+
+a[href$=".org"] { /*для всіх посилань, які закінчуються на .org*/
+
+}
+
+h1, h2 { /*обрати одразу декілька елементів
+    .score, .tag, #Cast_list {} */
+    color:
+}
+
+#Cast_list span { /*Обрати span, які містяться в Cast_list*/
+    color: rgb(111, 28, 189);
+}
+
+/* ol > li { Обрати li, які прямі нащадки ol, незважаючи на інші елементи, які можуть бути також в ol)
+    border: 1px solid blueviolet;
+}*/
+
+h4.score { /*Обрати усі h4, які мають клас score, тому що такий же клас можуть мати інші елементи*/
+    color: rgb(228, 202, 57);
+}
+ 
+h2#summary { /*Хоча id повинно бути унікальним, тож немає сенсу уточнювати, що це h2*/
+
+}
+
+.class.class { /*Обрати елементи, які мають два класи*/
+
+}
+
+/* Borders кордони */
+
+.input_text {
+    margin: 3px;
+}
+
+.input_number {
+    margin: 3px;
+}
+
+.input_agreement {
+    margin: 3px;
+}
+
+.input_permission {
+    margin: 3px;
+}
+
+button {
+    margin: 3px;;
+}

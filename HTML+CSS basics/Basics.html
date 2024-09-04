@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@100;400&display=swap"
+        rel="stylesheet">
+        <link href="Styles.css" rel="stylesheet"/>
+        <title>Demo</title>
+    </head>
+<body>
+<!--H1-3 training
+Заголовки-->
+    <h2>My pets</h2>
+        <p>This is a page about my beloved friends.</p>
+            <h3>My cats</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error odit, quam voluptatibus</p>
+            <h3>My dogs</h3>
+                <p>I have 2 dogs, I love them so much.</p>
+                    <h4>Pryanick</h4>
+                        <p>He is a battle dog, loyal and strong.</p>
+                    <h4>Tirion</h4>
+                        <p>He is a lap dog, very friendly and a bit stupid.</p>
+<!--Cursive training-
+Виділення тексту-->
+    <h2>Виділення тексту</h2>
+    <p>I <em>really</em> need to go to bed.</p>
+    <p>Whatever you do, <strong>do not let the cats out</strong>.</p>
+    <p>In this coutse we will learn <strong>HTML</strong>, <strong>CSS</strong>, and a bit of <strong> JavaScript</strong>.</p>
+<!--Superscript and subscript training
+Нижній або верхній текст-->
+    <h2>Нижній або верхній текст</h2>
+    <p>I was born at 4<sup>th</sup>December.</p>
+    <p>A human needs to drink 2 liters of H<sub>2</sub>O per day.</p>
+<!--Link training
+Посилання-->
+    <h2>Посилання</h2>
+    <a href="http://www.reddit.com">Reddit</a>
+    <p>My favorite site is <a href="http://www.reddit.com">Reddit</a>.</p>
+    <p>But also I like following social networks:</p>
+    <ul>
+        <li><a href="http://www.Facebook.com">Facebook</a></li>
+        <li><a href="http://www.Instagram.com">Instagram</a></li>
+        <li><a href="http://X.com">Twitter</a></li>
+    </ul>
+    <p><a href="Lists.html">Here</a> is an example how list wrote in HTML looks like.</p>
+<!--Images training
+Зображення-->
+    <h2>Зображення</h2>
+    <div class="gallery_card">
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="Mountain Lion"/>
+    </div>
+    <div class="gallery_card">
+        <img src="https://images.unsplash.com/photo-1722100351919-86ee668c88db?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Moroccan arch"/>
+    </div>
+<!--Forms training
+Форми-->
+    <h2>Форми</h2>
+    <form action="/login"> <!--або посилання на сервер або сайт, на який відправляємо дані-->
+        <label for="username_field">Username</label>
+        <input type="text" name="username_field" placeholder="Username" id="username_field" required>
+        <p></p>
+        <label for="password_field">Password</label>
+        <input type="password" name="password_field" placeholder="Password" id="password_field" required>
+        <p></p>
+        <button>Submit</button>
+    </form>
+    <h3>Текстові форми</h3>
+    <form action="">
+        <label for="review_form">Please, write your opinion below</label>
+        <p></p>
+        <textarea rows="20" cols="40" name="review_form" id="review_form"></textarea> <!--Умовно ширина та довжина форми для тексту-->
+        <p></p>
+        <button>Send</button>
+    </form>
+    <h3>Чекбокси</h3>
+    <form action="">
+        <label for="agree_terms_and_conditions">I agree to Terms and Conditions</label>
+        <input type="checkbox" id="agree_terms_and_conditions" name="TOC_agreement" required>
+        <button>Submit</button>
+    </form>
+    <h3>Спливаюча форма</h3>
+    <form action="">
+        <label for="gender_field">Select your gender</label>
+        <select name="gender_field" id="gender_field">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Non_Binary">Non Binary</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <h3>Radio кнопки</h3>
+    <form action=""><!--Назвати їх однаково, щоб користувачі могли обрати тільки один варіант-->
+    <!--value називає обрані користувачами дані серверу-->
+        <label for="phone">Phone</label>
+        <input type="radio" id="phone_preferred" name="contact" value="phone_preferred">
+        <label for="email">e-Mail</label>
+        <input type="radio" id="email_preferred" name="contact" value="email_preferred">
+        <label for="viber">Viber</label>
+        <input type="radio" id="viber_preferred" name="contact" value="viber_preferred">
+        <button>Submit</button>
+    </form>
+    <h3>Span</h3>
+        <h4>I love <span>cats</span> and <span>dogs</span>.</h4>
+    <h3>Семантична верстка</h3>
+        <header>
+
+        </header>
+        <nav id="sidebar"> <!--Навігація, посилвння-->
+        </nav>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos unde nihil modi necessitatibus perspiciatis commodi, odio harum repellendus consectetur suscipit eveniet ipsum molestias? Voluptates voluptatum fugit nihil impedit, odio saepe.</p>
+            <aside> <!--Цитування, сноска-->
+                <p></p>
+            </aside>
+        </main>
+        <footer>
+            <p>Copyright</p>
+        </footer>
+    <h2>Boxes and containers</h2>
+            <div class="link"><a href="google.com">Click me</a></div>
+            <div class="link_2"><a href="google.com">Click me<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda facere repudiandae quam tempora asperiores praesentium quibusdam officia facilis velit eius provident, minima inventore recusandae esse reprehenderit excepturi earum ipsum!</p></a></div>
+        <h3>Display</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta explicabo molestias quod, voluptatum fuga saepe doloremque ea omnis officiis delectus quia amet, cupiditate alias praesentium deserunt voluptatem consequatur nam tempora? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, omnis saepe! <span id="Quibusdam">Quibusdam</span> id excepturi vero asperiores ullam, animi repellendus aliquid quasi fugit ab sequi dolorem possimus facere, doloremque doloribus quaerat.</p>
+        <h3>Inline block</h3>
+            <div class="gallery"></div>
+            <div class="gallery"></div>
+        <h3>Negative margins</h3>
+            <h4 id="Negative_margin">Negative margin</h4>
+        <h3>Auto margin</h4>
+            <div id="Auto_margin">
+                <h4>Center me</h4>
+            </div>
+        <h3>Закруглені краї (Border radius)</h2>
+            <div class="box"></div>
+        <h3>Тіні коробок (Box shadow)</h3>
+            <div class="box"></div>
+</body>
+</html>

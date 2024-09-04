@@ -1,0 +1,172 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Moderustic, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section, footer {
+    padding: 0 25%;
+}
+
+.first_block {
+    background-color: #f08e80;
+    min-height: 100vh;
+    color: white;
+    padding-bottom: 32px;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between; /*Отталкивает элементы на равные расстояния друг от друга до границ блока*/
+    align-items: center;
+    padding: 24px 32px;
+}
+
+.nav_bar .links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 16px;
+    font-size: 1.2rem;
+}
+
+.nav_bar p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav_bar .contact_me_button {
+    background-color: white;
+    color: #f08e80;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.nav_bar .contact_me_button:hover {
+    opacity: 0.8;
+}
+
+.first_block_content h1 {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 48px 0;
+}
+
+.two_column_section {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.two_column_section > p {
+    width: 50%;
+}
+
+.second_column_section {
+    padding: 24px 0 0 0;
+}
+
+.two_column_section ul {
+    width: 50%;
+    list-style-type: none;
+}
+
+.two_column_section .specialties li {
+    font-size: 1.25rem;
+    margin: 8px 0;
+}
+
+.blog_section {
+    background-color: white;
+    padding-top: 32px;
+}
+
+.two_column_section .blog_posts {
+    width: 50%;
+}
+
+.blog_heading {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.blog_text {
+    font-size: 1rem;
+    margin-top: 12px;
+}
+
+.blog_posts .blog_date {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 32px;
+    margin-top: 12px;
+}
+
+.events_section {
+    background-color: beige;
+    padding-top: 32px;
+}
+
+.events_posts {
+    width: 50%;
+    float: left;
+}
+
+.events_heading {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.events_location {
+    font-size: 1rem;
+    margin-top: 12px;
+}
+
+.events_posts .events_date {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 32px;
+    margin-top: 12px;
+}
+
+/* footer {
+    background-color: black;
+    padding: 34px 0;
+}
+
+footer p {
+    color: white;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+footer img {
+    max-width: 30px;
+}
+
+.logos {
+    text-align: center;
+} */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 64px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 8px 8px 8px;
+}

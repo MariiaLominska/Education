@@ -1,0 +1,53 @@
+.hover {
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 30px;
+  display: inline-block;
+  color: orangered;
+  background-color: antiquewhite;
+  transition: color 2s, background-color 2s ease-in 1s;
+}
+
+.hover:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+  transform: scale(1.2);
+}
+
+/* .big_box {
+  transform: translateX(100px);
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  /* transform: translateX(200px); */
+  transform: translateX(100px) rotate(45deg);
+  transform-origin: top left;
+  /* transform: scale(0.1); */
+  margin: 30px;
+}
+
+.buttons_section {
+  height: 70vh;
+  background-color: aqua;
+}
+
+.button1 {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.button2 {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  background-color: aliceblue;
+}

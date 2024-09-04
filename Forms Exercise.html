@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Exercise</title>
+</head>
+<body>
+    <h1>More fucking forms</h1>
+    <form action="">
+    <div>
+        <label for="Course_title">Course Title</label>
+        <input type="text" name="Course_title" id="Course_title" required>
+    </div>
+    <div>
+        <label for="Course_description">Course Description</label>
+    </div>
+    <div>
+        <textarea rows="20" cols="40" name="Course_description" id="Course_description" required></textarea> 
+    </div>
+    <div>
+        <label for="Skill_level">Skill level</label>
+        <select name="Skill_level" id="Skill_level" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+        </select>
+    </div>
+    <div>
+        <label for="publishing_agreement">Ready to publish the course?</label>
+        <input type="checkbox" id="publishing_agreement" name="publishing_agreement" required>
+    </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
