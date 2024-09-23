@@ -1,0 +1,77 @@
+.hover {
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 30px;
+    display: inline-block;
+    color: orangered;
+    background-color: antiquewhite;
+    transition: color 2s, background-color 2s ease-in 1s;
+  }
+  
+  .hover:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+    transform: scale(1.2);
+  }
+  
+  /* .big_box {
+    transform: translateX(100px);
+  } */
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* transform: translateX(200px); */
+    transform: translateX(100px) rotate(45deg);
+    transform-origin: top left;
+    /* transform: scale(0.1); */
+    margin: 30px;
+  }
+  
+  .buttons_section {
+    height: 70vh;
+    background-color: #0288d1;
+  }
+  
+  .button1 {
+    display: inline-block;
+    text-align: center;
+    background-color: aliceblue;
+    color:#0255d1d8;
+    margin: 10px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgb(110, 109, 109);
+  }
+  
+  .button2 {
+    display: inline-block;
+    text-align: center;
+    background-color: aliceblue;
+    color:#0255d1d8;
+    margin: 10px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgb(110, 109, 109);
+  }
+
+  .two_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+  .button1:hover {
+    transform: translateY(-5%);
+    box-shadow: 3px 7px 7px rgb(110, 109, 109);
+  }
+  .button2:hover {
+    transform: scale(0.9);
+    box-shadow: none;
+  }

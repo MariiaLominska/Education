@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 223, 235);
+    font-family: "Open-Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    color: rgb(44, 44, 44);
+}
+
+h1 {
+    color: rgb(83, 49, 156);
+    margin: 60px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    color: rgb(200, 174, 255);
+}
+
+.tabs p {
+    padding: 25px;
+}
+
+.tabs p:hover {
+    color: rgb(83, 49, 156);
+    cursor: pointer;
+}
+
+.tabs p.active {
+    color: rgb(83, 49, 156);
+    position: relative;
+}
+
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    top: 65px;
+}
+
+.tabs p.active::before {
+    content: "";
+    height: 4px;
+    width: 150%;
+    background-color: rgb(83, 49, 156);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.subscribtion_plan {
+    margin: 0 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toggle-wrapper {
+    margin: 30px;
+    display: flex;
+}
+
+.toggle-wrapper img {
+    height: 40px;
+    margin: 0 16px;
+
+}
+
+.toggle {
+    background-color: rgb(83, 49, 156);
+    height: 32px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-weight: bolder;
+    align-self: center;
+}
+
+.toggle span {
+    color: white;
+    padding: 2px 16px;
+    border-radius: 20px;
+}
+
+.toggle span:first-of-type {
+    margin-right: 10px;
+}
+
+.toggle .active_toggle {
+    background-color: white;
+    color: rgb(83, 49, 156);
+}
+
+.sessions_quantity {
+    background-color: rgb(250, 247, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sessions {
+    color: rgb(44, 44, 44);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.number {
+    color: rgb(83, 49, 156);
+    font-weight: bolder;
+    font-size: 54px;
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 15px;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slider .bar {
+    height: 16px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.slider .progress {
+    width: 31%;
+    height: 16px;
+    background: linear-gradient(90deg, 
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+    );
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress .point {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(83, 49, 156);
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: -4px;
+    left: 95%;
+    transition: 0.15s transform ease;
+}
+
+.slider .point:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.scale {
+    width: 100%;
+}
+
+.slider .scale ul {
+    font-weight: bold;
+    color: rgb(166,166,166);
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: rgb(250, 247, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 46%;
+    max-width: 600px;
+    margin: 30px 0;
+    padding: 0 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
+    position: relative;
+    text-align: center;
+    transition: 0.15s transform ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 4px;
+}
+
+.save_card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card .billing {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(83, 49, 156);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card .total_cost {
+    color: rgb(44, 44, 44);
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.card .monthly_cost {
+    text-transform: uppercase;
+    color: rgb(83, 49, 156);
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.card .monthly_cost:before {
+    content: "";
+    height: 1px;
+    width: 70px;
+    background-color: rgb(166,166,166);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card .data_retention {
+    color: rgb(83, 49, 156);
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.card .team_members {
+    color: rgb(83, 49, 156);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: rgb(83, 49, 156);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card .save_CTA {
+    width: 100%;
+    height: 22px;
+    background: linear-gradient(90deg, 
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+    );
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px;
+}
