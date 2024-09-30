@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .text {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .text a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .text a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Marina Palms -->
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="Marina Palms" />
+        <div class="text">
+          <a href="#">Marina Palms</a> / North Miami Beach, FL 33162
+        </div>
+      </div>
+
+      <!-- Beach Lifeguard Stand -->
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="Lifeguard Stand" />
+        <div class="text">
+          <a href="#">Lifeguard Stand</a> / Miami Beach, FL
+        </div>
+      </div>
+
+      <!-- Edition Residences -->
+      <div>
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Edition Residences"
+        />
+        <div class="text">
+          <a href="#">Edition Residences</a> / Miami Beach, FL 33139
+        </div>
+      </div>
+
+      <!-- American Flag Building -->
+      <div>
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="American Flag Building"
+        />
+        <div class="text">
+          <a href="#">American Flag Building</a> / Miami Beach, FL
+        </div>
+      </div>
+
+      <!-- Faena House -->
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="Faena House" />
+        <div class="text">
+          <a href="#">Faena House</a> / Miami Beach, FL 33140
+        </div>
+      </div>
+
+      <!-- Beach -->
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="Beach Scene" />
+        <div class="text"><a href="#">Beach Scene</a> / Miami Beach, FL</div>
+      </div>
+    </div>
+  </body>
+</html>
