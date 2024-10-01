@@ -36,6 +36,7 @@ section {
   line-height: 22px;
   letter-spacing: 2px;
   font-weight: 700;
+  position: relative;
 }
 
 .navbar .logo {
@@ -73,6 +74,107 @@ section {
 
 .CTA_call_us .phone_number {
   margin-left: 10px;
+}
+
+.burger_wrapper {
+  display: flex;
+  align-items: end;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  margin-bottom: 4px;
+}
+
+.active .burger_top {
+  transform: translateY(14px) rotate(45deg);
+}
+
+.active .burger_middle {
+  opacity: 0;
+}
+
+.active .burger_bottom {
+  transform: translateY(-14px) rotate(-45deg);
+}
+
+.burger_menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 32px;
+  width: 32px;
+}
+
+.burger_menu .burger {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile_menu {
+  background-color: #0075ff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.mobile_menu_header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo_mobile {
+  margin-top: 46px;
+  height: 48px;
+  width: 82px;
+}
+
+.mobile_menu_list {
+  margin: 48px 0 0 20px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.mobile_menu_list li {
+  margin-bottom: 32px;
+}
+
+.call_us_mobile {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.call_us_mobile p {
+  margin-top: 16px;
+  position: relative;
+  margin-right: auto;
+}
+
+.call_us_mobile p::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile_nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .header h1 {
@@ -472,6 +574,11 @@ footer .logo {
   .header {
     height: 100vh;
     background-position: right;
+  }
+
+  .burger_wrapper {
+    display: flex;
+    margin-top: 30px;
   }
 
   .contacts_column {
